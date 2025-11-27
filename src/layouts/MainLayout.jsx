@@ -17,7 +17,7 @@ const MainLayout = () => {
 
   return (
     <div className="bg-slate-50 flex flex-col min-h-screen font-sans">
-      <header className="bg-indigo-400 p-4">
+      <header className="bg-indigo-300 p-4">
         <Navbar />
       </header>
 
