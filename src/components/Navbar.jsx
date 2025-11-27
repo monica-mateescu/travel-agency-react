@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="container mx-auto flex justify-between items-center  text-slate-100">
       <Link to="/" className="text-xl font-semibold">
-        Travel Agency
+        Wanderlust Travel Co.
       </Link>
       <ul className="flex space-x-4 text-sm font-semibold">
         <li>

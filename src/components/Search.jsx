@@ -10,7 +10,7 @@ const Search = () => {
     navigate("/destinations");
   };
   return (
-    <section className="py-20 text-center text-slate-600">
+    <section className="py-20 text-center text-slate-400">
       <Title title="Find your favorite destination" />
       <form onSubmit={handleSubmit} className="flex flex-col max-w-xl mx-auto">
         <label htmlFor="origin" aria-label="Origin" className="mb-2">

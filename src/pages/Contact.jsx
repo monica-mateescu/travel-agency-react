@@ -6,8 +6,9 @@ const Contact = () => {
     e.preventDefault();
   };
   return (
-    <section className="py-20 text-center text-slate-600">
+    <section className="py-20 text-center text-slate-400 text-md">
       <Title title="Contact Us" />
+      <title>Contact Us | Wanderlust Travel Co.</title>
       <form onSubmit={handleSubmit} className="flex flex-col max-w-xl mx-auto">
         <label htmlFor="name" aria-label="Your full name" className="mb-2">
           <input
