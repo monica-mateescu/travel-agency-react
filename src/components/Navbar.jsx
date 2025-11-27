@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "text-slate-400" : "")}
+            className={({ isActive }) => (isActive ? "text-slate-600" : "")}
           >
             Home
           </NavLink>
