@@ -5,6 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Destinations from "./components/Destinations";
 import Destination from "./components/Destination";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         </Route>
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
