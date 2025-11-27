@@ -1,11 +1,19 @@
 import Button from "./Button";
+import { useNavigate } from "react-router";
+
 const Search = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    navigate("/destinations");
+  };
   return (
     <section className="py-4 text-center text-slate-600">
       <h1 className="text-slate-600 text-xl font-semibold mb-4">
         Find your favorite destination
       </h1>
-      <form className="flex flex-col w-sm mx-auto">
+      <form onSubmit={handleSubmit} className="flex flex-col w-sm mx-auto">
         <label htmlFor="origin" aria-label="Origin" className="mb-2">
           <input
             type="text"

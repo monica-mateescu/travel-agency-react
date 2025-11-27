@@ -1,10 +1,13 @@
 import Button from "./shared/Button";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <section className="py-4 text-center text-slate-600">
       <h1 className="text-slate-600 text-xl font-semibold mb-4">Contact Us</h1>
-      <form className="flex flex-col w-sm mx-auto">
+      <form onSubmit={handleSubmit} className="flex flex-col w-sm mx-auto">
         <label htmlFor="name" aria-label="Your full name" className="mb-2">
           <input
             type="text"
