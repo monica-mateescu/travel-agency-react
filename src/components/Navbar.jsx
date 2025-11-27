@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink, Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -8,24 +8,48 @@ const Navbar = () => {
       </Link>
       <ul className="flex space-x-4 text-sm font-semibold">
         <li>
-          <Link to="/" className="hover:text-slate-500">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "text-slate-400" : "")}
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/destinations" className="hover:text-slate-500">
+          <NavLink
+            to="/destinations"
+            className={({ isActive }) =>
+              isActive
+                ? "text-slate-600"
+                : "hover:text-slate-600 active:text-slate-600"
+            }
+          >
             Destinations
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className="hover:text-slate-500">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-slate-600"
+                : "hover:text-slate-600 active:text-slate-600"
+            }
+          >
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-slate-500">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "text-slate-600"
+                : "hover:text-slate-600 active:text-slate-600"
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
