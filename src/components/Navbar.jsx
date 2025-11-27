@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="container mx-auto flex justify-between items-center  text-slate-100">
+    <nav className="container mx-auto flex justify-between items-center  text-indigo-100">
       <Link to="/" className="text-xl font-semibold">
         Wanderlust Travel Co.
       </Link>
@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "text-slate-600" : "")}
+            className={({ isActive }) => (isActive ? "text-indigo-600" : "")}
           >
             Home
           </NavLink>
@@ -20,8 +20,8 @@ const Navbar = () => {
             to="/destinations"
             className={({ isActive }) =>
               isActive
-                ? "text-slate-600"
-                : "hover:text-slate-600 active:text-slate-600"
+                ? "text-indigo-600"
+                : "hover:text-indigo-600 active:text-indigo-600"
             }
           >
             Destinations
@@ -32,8 +32,8 @@ const Navbar = () => {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? "text-slate-600"
-                : "hover:text-slate-600 active:text-slate-600"
+                ? "text-indigo-600"
+                : "hover:text-indigo-600 active:text-indigo-600"
             }
           >
             About
@@ -44,8 +44,8 @@ const Navbar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-slate-600"
-                : "hover:text-slate-600 active:text-slate-600"
+                ? "text-indigo-600"
+                : "hover:text-indigo-600 active:text-indigo-600"
             }
           >
             Contact
