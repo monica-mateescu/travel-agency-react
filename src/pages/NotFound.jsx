@@ -12,7 +12,7 @@ const NotFound = () => {
       <p className="mb-2">
         The page you're looking for might have taken a different flight.
       </p>
-      <button onClick={() => navigate("/")} className="btn btn-link">
+      <button onClick={() => navigate(-1)} className="btn btn-link">
         Let’s get you back on the map.
       </button>
     </section>
