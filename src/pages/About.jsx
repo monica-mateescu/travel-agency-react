@@ -1,8 +1,8 @@
-import Title from "./shared/Title";
+import Title from "../components/Title";
 
 const About = () => {
   return (
-    <section className="py-4 text-center text-slate-400">
+    <section className="py-20 text-center text-slate-400">
       <Title title="About Us" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorem

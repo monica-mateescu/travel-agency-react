@@ -1,4 +1,4 @@
-import Title from "./shared/Title";
+import Title from "../components/Title";
 
 import { useNavigate } from "react-router";
 

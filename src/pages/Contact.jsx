@@ -1,5 +1,5 @@
-import Button from "./shared/Button";
-import Title from "./shared/Title";
+import Button from "../components/Button";
+import Title from "../components/Title";
 
 const Contact = () => {
   const handleSubmit = (e) => {

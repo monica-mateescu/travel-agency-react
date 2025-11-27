@@ -1,21 +1,19 @@
-import { Routes, Route, Outlet } from "react-router";
+import { Routes, Route } from "react-router";
 import MainLayout from "./layouts/MainLayout";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Destinations from "./components/Destinations";
-import Destination from "./components/Destination";
-import NotFound from "./components/NotFound";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Destinations from "./pages/Destinations";
+import Destination from "./pages/Destination";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="destinations" element={<Outlet />}>
-          <Route index element={<Destinations />} />
-          <Route path=":slug" element={<Destination />} />
-        </Route>
+        <Route path="/destinations" element={<Destinations />} />
+        <Route path="/destinations/:slug" element={<Destination />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
