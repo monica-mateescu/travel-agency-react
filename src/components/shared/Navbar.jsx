@@ -6,7 +6,7 @@ const Navbar = () => {
       <Link to="/" className="text-xl font-semibold">
         Travel Agency
       </Link>
-      <ul className="flex space-x-4 text-sm">
+      <ul className="flex space-x-4 text-sm font-semibold">
         <li>
           <Link to="/" className="hover:text-slate-500">
             Home

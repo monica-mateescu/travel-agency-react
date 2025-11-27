@@ -6,16 +6,16 @@ const Contact = () => {
     e.preventDefault();
   };
   return (
-    <section className="py-4 text-center text-slate-600">
+    <section className="py-20 text-center text-slate-600">
       <Title title="Contact Us" />
-      <form onSubmit={handleSubmit} className="flex flex-col w-sm mx-auto">
+      <form onSubmit={handleSubmit} className="flex flex-col max-w-xl mx-auto">
         <label htmlFor="name" aria-label="Your full name" className="mb-2">
           <input
             type="text"
             name="name"
             placeholder="Your full name"
             id="name"
-            className="w-full input"
+            className="w-full input input-lg"
           />
         </label>
         <label htmlFor="email" aria-label="Your address email" className="mb-2">
@@ -24,16 +24,15 @@ const Contact = () => {
             name="email"
             placeholder="name@example.com"
             id="email"
-            className="w-full input"
+            className="w-full input input-lg"
           />
         </label>
         <label htmlFor="message" aria-label="Your message" className="mb-2">
           <textarea
             name="message"
             placeholder="Type your message here.."
-            rows={4}
             id="message"
-            className="w-full textarea textarea-sm"
+            className="w-full textarea textarea-lg"
           ></textarea>
         </label>
         <Button name={"Send your message"} />
