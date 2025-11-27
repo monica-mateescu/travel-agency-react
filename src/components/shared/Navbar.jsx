@@ -3,8 +3,10 @@ import { Link } from "react-router";
 const Navbar = () => {
   return (
     <nav className="container mx-auto flex justify-between items-center  text-slate-100">
-      <Link to="/">Travel Agency</Link>
-      <ul className="flex space-x-4 text-xs">
+      <Link to="/" className="text-xl font-semibold">
+        Travel Agency
+      </Link>
+      <ul className="flex space-x-4 text-sm">
         <li>
           <Link to="/" className="hover:text-slate-500">
             Home

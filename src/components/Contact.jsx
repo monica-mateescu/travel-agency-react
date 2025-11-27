@@ -1,4 +1,5 @@
 import Button from "./shared/Button";
+import Title from "./shared/Title";
 
 const Contact = () => {
   const handleSubmit = (e) => {
@@ -6,7 +7,7 @@ const Contact = () => {
   };
   return (
     <section className="py-4 text-center text-slate-600">
-      <h1 className="text-slate-600 text-xl font-semibold mb-4">Contact Us</h1>
+      <Title title="Contact Us" />
       <form onSubmit={handleSubmit} className="flex flex-col w-sm mx-auto">
         <label htmlFor="name" aria-label="Your full name" className="mb-2">
           <input
@@ -14,7 +15,7 @@ const Contact = () => {
             name="name"
             placeholder="Your full name"
             id="name"
-            className="w-full input input-sm"
+            className="w-full input"
           />
         </label>
         <label htmlFor="email" aria-label="Your address email" className="mb-2">
@@ -23,7 +24,7 @@ const Contact = () => {
             name="email"
             placeholder="name@example.com"
             id="email"
-            className="w-full input input-sm"
+            className="w-full input"
           />
         </label>
         <label htmlFor="message" aria-label="Your message" className="mb-2">
