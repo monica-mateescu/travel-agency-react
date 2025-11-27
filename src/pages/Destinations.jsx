@@ -4,11 +4,10 @@ import Card from "../components/Card";
 
 const Destinations = () => {
   const destinations = useOutletContext();
-  console.log(destinations);
-
   return (
-    <section className="py-20 text-center text-slate-400">
+    <section className="py-20 text-center text-slate-400 text-md">
       <Title title="Journey to Amazing Destinations" />
+      <title>Journey to Amazing Destinations</title>
       <p className="mb-20">
         Escape, unwind, and explore the world one stunning destination at a
         time.
