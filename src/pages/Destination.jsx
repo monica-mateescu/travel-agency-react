@@ -17,7 +17,7 @@ const Destination = () => {
         </Link>
       </div>
       <figure>
-        <img src={image} alt={title} className="w-full" />
+        <img src={image} alt={title} className="w-auto max-h-150 mx-auto" />
       </figure>
     </article>
   );
