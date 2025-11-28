@@ -8,7 +8,7 @@ const NotFound = () => {
     <section className="py-20 text-center text-slate-400 text-md">
       <Title title="Oops… looks like this destination doesn’t exist." />
       <title>Page Not Found | Wanderlust Travel Co.</title>
-      Journey to Amazing Destinations
+
       <p className="mb-2">
         The page you're looking for might have taken a different flight.
       </p>
