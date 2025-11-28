@@ -5,7 +5,7 @@ const Card = ({ destination }) => {
   return (
     <Link
       className="card bg-base-100 max-w-150 shadow-sm"
-      to={`/destination/${slug}`}
+      to={`/destinations/${slug}`}
     >
       <figure>
         <img src={image} alt={title} className="w-full h-50" />

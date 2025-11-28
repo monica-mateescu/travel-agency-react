@@ -10,7 +10,11 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/"
-            className={({ isActive }) => (isActive ? "text-indigo-600" : "")}
+            className={({ isActive }) =>
+              isActive
+                ? "text-indigo-600"
+                : "hover:text-indigo-600 active:text-indigo-600"
+            }
           >
             Home
           </NavLink>
